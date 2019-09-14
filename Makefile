@@ -6,8 +6,8 @@ CFLAGS+= -W -Wall -O2 -std=c99 -g -pedantic
 
 all: main
 
-main: $@.c $(SRCS) $(HDRS)
-	$(CC) $(CFLAGS) -o $@ $@.c $(SRCS) $(LDFLAGS)
+main: $@.c urt.c
+	$(CC) $(CFLAGS) -o $@ $@.c urt.c
 
 test: 
 	@echo CURDIR:${.CURDIR}
