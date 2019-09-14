@@ -24,6 +24,7 @@ deploy: all
 
 clean:
 	rm -f main
+	rm -f *.BAK *.core
 
 .PHONY: test clean all
 
